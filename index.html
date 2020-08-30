@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - AlphaCamp2_2Final</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>User List</title>
+<!--   reference -->
+  <script src="https://use.fontawesome.com/989ee3131a.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Friend User List</a>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Search Bar -->
+    <div class="row justify-content-between">
+      <form class="form-inline" id="search-form">
+        <label class="sr-only" for="inlineFormInputName2">Search Keyword</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="search-input" placeholder="Keyword..." />
+        <button type="submit" class="btn btn-primary mb-2" id="search-submit">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="row d-flex justify-content-around">
+      <div class="btn-group" id="gender" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" data-gender="all">All</button>
+        <button type="button" class="btn btn-secondary" data-gender="male">Male</button>
+        <button type="button" class="btn btn-secondary" data-gender="female">Female</button>
+      </div>
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Region
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" id="region">
+<!--       <li><a href="#">region name is rendered</a></li> -->
+    </ul>
+  </div>
+    </div>
+  </div>
+
+  <!--   content is here -->
+  <div class="container mt-2">
+    <div class="row" id="data-panel">
+      <!-- Render Movie List -->
+    </div>
+  </div>
+
+  <!-- Movie Modal -->
+  <div class="modal fade" id="user-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="user-modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="user-modal-body">
+          <div class="row">
+            <div class="col-sm-6" id="user-modal-avatar">
+              <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="user-poster" class="img-fluid" width="500" height="600" />
+            </div>
+            <div class="col-sm-6">
+              <p>Name: <em id="user-modal-name">Vanessa Davis</em></p>
+              <p>Email: <span id="user-modal-email">vanessa.davis@example.com</span></p>
+              <p>Gender: <span id="user-modal-gender">female</span></p>
+              <p>Age: <span id="user-modal-age">33</span></p>
+              <p>Region: <span id="user-modal-region">AU</span></p>
+              <p>Birthday: <span id="user-modal-birthday">1987-08-08</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- paginator -->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="paginator">
+      <li class="page-item"><a class="page-link" href="javascript:;">1</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+    </ul>
+  </nav>
+  
+<!--   javascript reference -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
